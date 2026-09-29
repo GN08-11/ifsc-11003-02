@@ -20,3 +20,41 @@ html {
   white-space: nowrap;
   width: 1px;
 }
+
+body{
+  font-family: "Story Script", sans-serif;
+  margin:0;
+}
+
+header.primary{
+  background-color: rgb(55, 55, 55);
+  color:#ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 20px #ffffff;
+  padding: 20px 40px;
+}
+
+header.primary a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header.primary h1{
+  font-size: 2.6rem;
+  margin:0;
+}
+
+header.primary p.subtitle{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin:10px 0 20px;
+  letter-spacing: 2px;
+}
+
+nav.primary ul{
+  padding: 0;
+}
+
+nav.primary ul li{
+  list-style: none;
+}
