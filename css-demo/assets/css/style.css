@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+/* ---------Responsive Images---------- */
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* Skip link utility: hidden until focused */
 .visually-hidden {
   border: 0;
@@ -38,7 +44,7 @@ header.primary{
   background-color: rgb(55, 55, 55);
   color:#ffffff;
   text-align: center;
-  text-shadow: 1px 1px 20px #ffffff;
+  text-shadow: 1px 1px 10px #000000;
   padding: 20px 40px;
 }
 
@@ -86,11 +92,63 @@ nav.primary ul li a:hover{
   text-shadow: 0;
 }
 
+#content h2{
+  color: rgb(55, 55, 55);
+  border-bottom: 1px solid #6b6b6b;
+}
+
+#content p{
+  color: rgb(55, 55, 55);
+  line-height: 1.6;
+}
+
+#blog{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+#blog figure{
+  /* background: rgb(220, 220, 220); */
+  margin:0;
+}
+
+#blog article.post{
+  background: rgb(55, 55, 55);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  font-size: .8rem;
+  color: #ffffff;
+  flex:1;
+}
+
+#blog h2{
+  flex: 0 0 100%;
+}
+
+#blog time.post-date, #blog figcaption{
+  text-transform: uppercase;
+}
+
+#blog a{
+  color: #ffffff;
+}
+
+
+
+
+
 /* --------- Media Queries --------- */
 
 @media screen and (max-width: 500px) {
   nav.primary ul{
     flex-direction: column;
     gap: 10px;
+  }
+
+  #blog{
+    flex-direction:column;
   }
 }
