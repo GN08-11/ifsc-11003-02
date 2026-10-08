@@ -32,8 +32,34 @@ img{
 .container{
   width:80vw;
   max-width:960px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
+
+.img-right{
+  float:right;
+  border:rgb(55, 55, 55) 3px solid;
+  border-radius: 10px 0;
+  padding: 5px;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left{
+  float:left;
+  border:rgb(55, 55, 55) 3px solid;
+  border-radius: 0 10px;
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center{
+  display:block;
+  margin: 20px auto;
+  border:rgb(55, 55, 55) 3px solid;
+  border-radius: 0 10px;
+  padding: 5px;
+}
+
+/* ---------Global Styles--------- */
 
 body{
   font-family: "Story Script", sans-serif;
@@ -108,6 +134,9 @@ nav.primary ul li a:hover{
   justify-content: space-between;
   flex-wrap: wrap;
   gap:20px;
+  padding-bottom: 40px;
+  border-top: 1px solid #6b6b6b;
+  border-bottom: 1px solid #6b6b6b;
 }
 
 #blog figure{
@@ -136,9 +165,62 @@ nav.primary ul li a:hover{
   color: #ffffff;
 }
 
+#practice h2{
+  color: rgb(55, 55, 55);
+  border-bottom: 1px solid #6b6b6b;
+}
+
+#practice h3{
+  border-left: 5px solid rgb(55, 55, 55);
+  padding: 5px 0 5px 10px;
+}
+
+#practice a:hover{
+  color: rgb(55, 55, 55);
+}
+
+#practice{
+  line-height:1.6;
+}
 
 
 
+
+
+
+aside[aria-label="Sidebar"]{
+  background-color: rgb(55, 55, 55);
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+aside div.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+aside div.container a:last-child{
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+}
+
+aside div.container a{
+  color:#ffffff;
+}
+
+aside .widget footer{
+  display:none;
+}
+
+footer.primary{
+  padding:5px;
+  text-align: center;
+  padding: 20px 40px;
+  text-shadow: 1px 1px 3px #000000;
+}
 
 /* --------- Media Queries --------- */
 
