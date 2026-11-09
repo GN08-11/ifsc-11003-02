@@ -1,0 +1,48 @@
+  body {
+  /* Forces the body to span the full height of the viewport */
+  min-height: 100vh;
+  margin: 0;
+
+    /* THREE STAR LAYERS + YOUR CORE GRADIENT BACKGROUND */
+    background: 
+    /* Layer 1: Dense field of tiny stars */
+    radial-gradient(1px 1px at 25px 30px, rgba(255, 255, 255, 0.8), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 75px 130px, rgba(255, 255, 255, 0.75), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 150px 60px, rgba(255, 255, 255, 0.85), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 220px 180px, rgba(255, 255, 255, 0.7), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 310px 40px, rgba(255, 255, 255, 0.8), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 380px 120px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+
+    /* Layer 2: Medium scattered stars */
+    radial-gradient(2px 2px at 40px 220px, rgba(255, 255, 255, 0.85), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 180px 290px, rgba(255, 255, 255, 0.8), rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 280px 240px, rgba(255, 255, 255, 0.75), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 450px 10px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+
+    /* Layer 3: Larger, bright hero stars */
+    radial-gradient(2.5px 2.5px at 90px 80px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+    radial-gradient(3px 3px at 260px 140px, rgba(255, 255, 255, 0.85), rgba(0,0,0,0)),
+    radial-gradient(2.5px 2.5px at 410px 270px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+
+
+    linear-gradient(
+    to bottom, 
+    #38004a 160px, 
+    #000000 400px, 
+    #000000 calc(100% - 300px), 
+    #38004a calc(100% - 200px)
+  );
+    
+    /* Tells the star pattern to loop nicely across the screen sizes */
+    background-size: 1000px 600px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll;
+
+    color: #e9d5ff;
+}
+
+#DCI-logo-top {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+}
