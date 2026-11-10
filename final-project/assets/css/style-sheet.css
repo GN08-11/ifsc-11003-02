@@ -26,6 +26,21 @@ html {
   padding: 5px;
 }
 
+.band-button {
+  width: fit-content;
+  display: block;
+  padding: 2px;
+  background-color: #38004a;
+  color: #e9d5ff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.band-button:hover {
+  background-color: #4b0066;
+}
+
 body {
   /* Forces the body to span the full height of the viewport */
   min-height: 100vh;
