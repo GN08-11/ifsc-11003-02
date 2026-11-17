@@ -1,0 +1,183 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.img-right{
+  float:right;
+  border:#38004a 3px solid;
+  border-radius: 10px 0;
+  padding: 5px;
+  margin: 10px 20px 10px 20px;
+}
+
+.img-left{
+  float:left;
+  border:#38004a 3px solid;
+  border-radius: 0 10px;
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center{
+  display:block;
+  margin: 20px auto;
+  border:#38004a 3px solid;
+  border-radius: 0 10px;
+  padding: 5px;
+}
+
+.band-button {
+  width: fit-content;
+  display: block;
+  padding: 2px;
+  background-color: #38004a;
+  color: #e9d5ff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.band-button:hover {
+  background-color: #4b0066;
+}
+
+body {
+  /* Forces the body to span the full height of the viewport */
+  min-height: 100vh;
+  margin: 0;
+    /* Start of AI generated code that I wanted but had no idea how to make */
+    /* THREE STAR LAYERS + YOUR CORE GRADIENT BACKGROUND */
+    background: 
+    /* Layer 1: Dense field of tiny stars */
+    radial-gradient(1px 1px at 25px 30px, rgba(255, 255, 255, 0.8), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 75px 130px, rgba(255, 255, 255, 0.75), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 150px 60px, rgba(255, 255, 255, 0.85), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 220px 180px, rgba(255, 255, 255, 0.7), rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 310px 40px, rgba(255, 255, 255, 0.8), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 380px 120px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+
+    /* Layer 2: Medium scattered stars */
+    radial-gradient(2px 2px at 40px 220px, rgba(255, 255, 255, 0.85), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 180px 290px, rgba(255, 255, 255, 0.8), rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 280px 240px, rgba(255, 255, 255, 0.75), rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 450px 10px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+
+    /* Layer 3: Larger, bright hero stars */
+    radial-gradient(2.5px 2.5px at 90px 80px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+    radial-gradient(3px 3px at 260px 140px, rgba(255, 255, 255, 0.85), rgba(0,0,0,0)),
+    radial-gradient(2.5px 2.5px at 410px 270px, rgba(255, 255, 255, 0.9), rgba(0,0,0,0)),
+
+    /* Code written by me */
+    linear-gradient(
+    to bottom, 
+    #38004a 160px, 
+    #000000 400px, 
+    #000000 calc(100% - 300px), 
+    #38004a calc(100% - 200px)
+  );
+    
+    /* Tells the star pattern to loop nicely across the screen sizes */
+    background-size: 1000px 600px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll;
+
+    color: #e9d5ff;
+    /* End of AI generated code that I wanted but had no idea how to make */
+
+    position: relative;
+}
+
+#DCI-logo-top {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#menu-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #e9d5ff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#menu-button:hover {
+  background-color: #4b0066;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* hidden off screen */
+
+    width: 300px;
+    height: 100vh;
+
+    background-color: #38004a;
+
+    transition: right 0.3s ease;
+
+    padding-top: 80px;
+    z-index: 999;
+}
+
+#menu.active {
+    right: 0;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #e9d5ff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu a {
+    color: #e9d5ff;
+    text-decoration: none;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .3s;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#content {
+  padding-bottom: 250px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
